@@ -1,8 +1,7 @@
-![Screenshot 2023-02-23 at 2 34 57 PM](https://user-images.githubusercontent.com/107063397/221024016-321d1acd-1466-4a71-9542-1876dac194be.png)
-
 This was built following resources from https://medium.com/codex/building-a-to-do-list-app-using-react-hooks-and-styled-component-7e413a16b91e.
 
 The purpose of this project was to familarize myself with React properties and concepts such as Props, Funcitonal and Class Components, State, and JSX.
+
 
 The application allows the user to input text and submit that text into an array that is displayed on screen:
 
