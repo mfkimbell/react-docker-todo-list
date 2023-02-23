@@ -5,7 +5,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: aliceblue;
+  background-color: rgb(232, 232, 246);
+  color: #ec8989;
+  ;
 }
 
 .MuiTypography-root {
@@ -16,7 +18,8 @@ body,
 html,
 #root {
   height: 100%;
-  color: rgb(0, 0, 0);
+  color: rgb(5, 2, 2);
+  background-color: #ec8989;
 }
 
 .todo-form {
@@ -38,7 +41,8 @@ html,
 }
 
 .App-header {
-  background-color: #ffffff;
+  background-color: rgb(232, 232, 246);
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
