@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+![Screenshot 2023-02-23 at 2 34 57 PM](https://user-images.githubusercontent.com/107063397/221024016-321d1acd-1466-4a71-9542-1876dac194be.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This was built following resources from https://medium.com/codex/building-a-to-do-list-app-using-react-hooks-and-styled-component-7e413a16b91e.
 
-## Available Scripts
+The purpose of this project was to familarize myself with React properties and concepts such as Props, Funcitonal and Class Components, State, and JSX.
 
-In the project directory, you can run:
+The application allows the user to input text and submit that text into an array that is displayed on screen:
 
-### `npm start`
+![Screenshot 2023-02-23 at 2 32 44 PM](https://user-images.githubusercontent.com/107063397/221023485-8b1349ba-b641-4adf-b928-0481abfdc541.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screenshot 2023-02-23 at 2 33 27 PM](https://user-images.githubusercontent.com/107063397/221023638-e6143045-eba1-419a-a7f7-0c5b705d69a5.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The user can then either check the item as completed
 
-### `npm test`
+![Screenshot 2023-02-23 at 2 33 38 PM](https://user-images.githubusercontent.com/107063397/221023687-d94829b4-2ed4-44b2-9e2c-20c99efeaf80.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Or, they can click the close button to delete the entry.
 
-### `npm run build`
+The Todo component has two functions that handle different events for the acutal displayed list of tasks. Checking a task as complete and deleting a task.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot 2023-02-23 at 2 36 46 PM](https://user-images.githubusercontent.com/107063397/221024354-3bb8e357-7f0c-4522-871a-5199602ccc96.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The TodoForm component handles the addition of tasks into the array of tasks. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot 2023-02-23 at 2 43 37 PM](https://user-images.githubusercontent.com/107063397/221025774-e2b29ef8-33bd-4794-913c-10a798a32251.png)
 
-### `npm run eject`
+The TodoList Component adds attributes for each entry in the task array. It stores the value, id, completed state, and removed state.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Screenshot 2023-02-23 at 2 45 02 PM](https://user-images.githubusercontent.com/107063397/221026058-c95a6f1a-d2c9-4c69-ba58-d1bf002733ba.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In App.js, we import all of the components needed to update our display. The useEffect() function allows us to store information in local storage so that when the page is refreshed, the tasks array does not reset to empty.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<img width="821" alt="Screenshot 2023-02-23 at 2 49 11 PM" src="https://user-images.githubusercontent.com/107063397/221026953-2bbe9715-c8a3-4b92-85ba-19e801e14658.png">
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+App.js implements the functionality of the functions called by the components. addtodo() adds a task to the array. toggleComplete() changes the state to either true or false depending on what it was previously. removeTodo() removes a task from the array by searching for a matching id. The final return passes the JSX elements to update the page. Because React is being used, a Virtual DOM is created, and when changes are made, it is compared against the actual DOM and only the changed elements are updated. 
 
-## Learn More
+<img width="753" alt="Screenshot 2023-02-23 at 2 52 02 PM" src="https://user-images.githubusercontent.com/107063397/221027495-dc4954e9-4e3b-438c-8bb0-9b33f20494fd.png">
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+CSS was taken from @material-ui.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
