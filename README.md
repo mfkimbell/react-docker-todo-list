@@ -11,6 +11,12 @@ The application allows the user to input text and submit that text into an array
 * `docker` for containerizing the project
 * `npm` as a package manager
 
+Here is the container being upped with `Docker-compose up --build`:
+<img width="694" alt="Screenshot 2023-07-02 at 3 10 39 PM" src="https://github.com/mfkimbell/react-docker-todo-list/assets/107063397/44069710-3276-4350-8797-591cec56257f">
+And here is the container shown in docker desktop:
+<img width="1483" alt="Screenshot 2023-07-02 at 3 08 40 PM" src="https://github.com/mfkimbell/react-docker-todo-list/assets/107063397/711a1b35-00a6-46f0-b1c8-9f0374ce1f38">
+
+
 The application allows the user to input text and submit that text into an array that is displayed on screen, or they can click the close button to delete the entry.
 
 <img width="1078" alt="Screenshot 2023-07-02 at 2 47 17 PM" src="https://github.com/mfkimbell/react-docker-todo-list/assets/107063397/88b65a30-9c9b-4d76-91db-0af8193f941c">
