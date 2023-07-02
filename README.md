@@ -1,19 +1,26 @@
-This was built following resources from https://medium.com/codex/building-a-to-do-list-app-using-react-hooks-and-styled-component-7e413a16b91e.
+# react-docker-todo-list
 
-The purpose of this project was to familarize myself with React properties and concepts such as Props, Funcitonal and Class Components, State, and JSX.
+The purpose of this project was to familarize myself with React properties and concepts such as Props, Funcitonal and Class Components, State, and JSX as well as learn about containerization with Docker, specifically containerization of React apps. 
+
+**Tools Used:**
+
+* `react` for rendering jsx elements
+*  `material ui` for desinging css components
+* `.yml` for storing configuration data for docker
+* `docker` for containerizing the project
+* `npm` as a package manager
 
 
-The application allows the user to input text and submit that text into an array that is displayed on screen:
 
-![Screenshot 2023-02-23 at 2 32 44 PM](https://user-images.githubusercontent.com/107063397/221023485-8b1349ba-b641-4adf-b928-0481abfdc541.png)
+The application allows the user to input text and submit that text into an array that is displayed on screen, or they can click the close button to delete the entry.
 
-![Screenshot 2023-02-23 at 2 33 27 PM](https://user-images.githubusercontent.com/107063397/221023638-e6143045-eba1-419a-a7f7-0c5b705d69a5.png)
+<img width="500" alt="Screenshot 2023-07-02 at 2 47 17 PM" src="https://github.com/mfkimbell/todo-list-graphical-interface/assets/107063397/da53a6ca-5454-44e5-b1a7-b44d758530d6">
 
-The user can then either check the item as completed
+<img width="500" alt="Screenshot 2023-07-02 at 2 47 32 PM" src="https://github.com/mfkimbell/todo-list-graphical-interface/assets/107063397/6598ada7-0290-4bb1-8f61-c78f72bf58c1">
 
-![Screenshot 2023-02-23 at 2 33 38 PM](https://user-images.githubusercontent.com/107063397/221023687-d94829b4-2ed4-44b2-9e2c-20c99efeaf80.png)
+<img width="500" height="380"  alt="Screenshot 2023-07-02 at 2 47 44 PM" src="https://github.com/mfkimbell/todo-list-graphical-interface/assets/107063397/355d5456-1139-48a3-a1a7-598d24aed875">
 
-Or, they can click the close button to delete the entry.
+<img width="500" alt="Screenshot 2023-07-02 at 2 47 51 PM" src="https://github.com/mfkimbell/todo-list-graphical-interface/assets/107063397/6b08305d-3357-40d3-964f-46542eed1e21">
 
 The Todo component has two functions that handle different events for the acutal displayed list of tasks. Checking a task as complete and deleting a task.
 
