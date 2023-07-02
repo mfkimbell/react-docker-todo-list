@@ -1,19 +1,26 @@
-This was built following resources from https://medium.com/codex/building-a-to-do-list-app-using-react-hooks-and-styled-component-7e413a16b91e.
+# react-docker-todo-list
 
-The purpose of this project was to familarize myself with React properties and concepts such as Props, Funcitonal and Class Components, State, and JSX.
+The purpose of this project was to familarize myself with React properties and concepts such as Props, Funcitonal and Class Components, State, and JSX as well as learn about containerization with Docker, specifically containerization of React apps. 
 
+**Tools Used:**
 
 The application allows the user to input text and submit that text into an array that is displayed on screen:
+* `react` for rendering jsx elements
+*  `material ui` for desinging css components
+* `.yml` for storing configuration data for docker
+* `docker` for containerizing the project
+* `npm` as a package manager
 
-![Screenshot 2023-02-23 at 2 32 44 PM](https://user-images.githubusercontent.com/107063397/221023485-8b1349ba-b641-4adf-b928-0481abfdc541.png)
+The application allows the user to input text and submit that text into an array that is displayed on screen, or they can click the close button to delete the entry.
 
-![Screenshot 2023-02-23 at 2 33 27 PM](https://user-images.githubusercontent.com/107063397/221023638-e6143045-eba1-419a-a7f7-0c5b705d69a5.png)
+<img width="1078" alt="Screenshot 2023-07-02 at 2 47 17 PM" src="https://github.com/mfkimbell/react-docker-todo-list/assets/107063397/88b65a30-9c9b-4d76-91db-0af8193f941c">
 
-The user can then either check the item as completed
+<img width="1027" alt="Screenshot 2023-07-02 at 2 47 32 PM" src="https://github.com/mfkimbell/react-docker-todo-list/assets/107063397/e97e7925-3180-4ba7-ac9f-9234f4ef6585">
 
-![Screenshot 2023-02-23 at 2 33 38 PM](https://user-images.githubusercontent.com/107063397/221023687-d94829b4-2ed4-44b2-9e2c-20c99efeaf80.png)
+<img width="1057" alt="Screenshot 2023-07-02 at 2 47 44 PM" src="https://github.com/mfkimbell/react-docker-todo-list/assets/107063397/e66a8a90-3493-4be7-b889-2f802402a4bd">
 
-Or, they can click the close button to delete the entry.
+<img width="1015" alt="Screenshot 2023-07-02 at 2 47 51 PM" src="https://github.com/mfkimbell/react-docker-todo-list/assets/107063397/483b7902-3a3b-487e-be54-5a2d8b16ae08">
+
 
 The Todo component has two functions that handle different events for the acutal displayed list of tasks. Checking a task as complete and deleting a task.
 
